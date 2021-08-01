@@ -1,5 +1,5 @@
 {
-  "name": "@babel/tailwind.macro",
+  "name": "babel-tw-macro",
   "version": "1.0.2",
   "description": "Use Tailwind with any CSS-in-JS library",
   "main": "macro.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bradlc/babel-plugin-tailwind-components.git"
+    "url": "git+https://github.com/yn1323/babel-tw-macro.git"
   },
   "keywords": [
     "tailwind",
@@ -28,12 +28,12 @@
     "macro.js",
     "utils.umd.js"
   ],
-  "author": "Brad Cornes <bradlc41@gmail.com>",
+  "author": "yn1323 <yn1323@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bradlc/babel-plugin-tailwind-components/issues"
+    "url": "https://github.com/yn1323/babel-tw-macro/issues"
   },
-  "homepage": "https://github.com/bradlc/babel-plugin-tailwind-components#readme",
+  "homepage": "https://github.com/yn1323/babel-tw-macro#readme",
   "dependencies": {
     "@babel/parser": "^7.14.8",
     "babel-plugin-macros": "^3.1.0",
