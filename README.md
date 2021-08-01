@@ -212,12 +212,3 @@ const App = () => (
 ```
 
 _Note: when using `hover:*`, `focus:*`, or media query (e.g. `sm:*`) class names the output is nested. You will need to use [styled-jsx-plugin-postcss](https://github.com/giuseppeg/styled-jsx-plugin-postcss) and [postcss-nested](https://github.com/postcss/postcss-nested) to get this to work._
-
-## Caution
-
-1. Sometimes requires space at the end
-
-```js
-${tw `flex-grow`} // NG
-${tw `flex-grow `} // OK
-```
