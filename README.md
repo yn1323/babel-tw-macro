@@ -213,9 +213,11 @@ const App = () => (
 
 _Note: when using `hover:*`, `focus:*`, or media query (e.g. `sm:*`) class names the output is nested. You will need to use [styled-jsx-plugin-postcss](https://github.com/giuseppeg/styled-jsx-plugin-postcss) and [postcss-nested](https://github.com/postcss/postcss-nested) to get this to work._
 
-## Todo
+## Caution
 
-- ~~support for the [container class](https://tailwindcss.com/docs/container); [in progress](https://github.com/bradlc/babel-plugin-tailwind-components/pull/2)~~ container is now a plugin and there is no plan to support plugins
-- ~~support for multiple modifiers, e.g. `sm:hover:*`~~
-- ~~support for defaults; for example `rounded` should be an alias for `rounded-default`~~
-- add [CodeSandbox](https://codesandbox.io/) demos
+1. Sometimes requires space at the end
+
+```js
+${tw `flex-grow`} // NG
+${tw `flex-grow `} // OK
+```
