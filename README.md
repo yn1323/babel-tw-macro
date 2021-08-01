@@ -13,10 +13,10 @@ Place the config file in your project root as `tailwind.js`. Alternatively you c
 There are two ways to use babel-plugin-tailwind-components. The recommended way is via [babel-plugin-macros](https://github.com/kentcdodds/babel-plugin-macros):
 
 ```
-npm install --save-dev babel-plugin-macros tailwind.macro
+npm install --save-dev babel-plugin-macros tailwind-extended.macro
 ```
 
-> _Note: [tailwind.macro](https://github.com/bradlc/tailwind.macro) is merely an alias for [babel-plugin-tailwind-components/macro](https://github.com/bradlc/babel-plugin-tailwind-components/blob/master/src/macro.js)_
+> _Note: [tailwind-extended.macro](https://github.com/bradlc/tailwind-extended.macro) is merely an alias for [babel-plugin-tailwind-components/macro](https://github.com/bradlc/babel-plugin-tailwind-components/blob/master/src/macro.js)_
 
 Then add babel-plugin-macros to your babel config:
 
@@ -28,11 +28,11 @@ Then add babel-plugin-macros to your babel config:
 
 > _Note: you will also need to install and enable `@babel/plugin-syntax-object-rest-spread` if you haven’t already_
 
-You can now use Tailwind classes with your preferred CSS-in-JS library by importing `tailwind.macro`:
+You can now use Tailwind classes with your preferred CSS-in-JS library by importing `tailwind-extended.macro`:
 
 ```js
 import styled from 'styled-components'
-import tw from 'tailwind.macro'
+import tw from 'tailwind-extended.macro'
 
 const Button = styled('button')`
   ${tw`font-mono text-sm text-red hover:text-blue`};
@@ -154,7 +154,7 @@ module.exports = {
 
 ```js
 import styled from 'styled-components'
-import tw from 'tailwind.macro'
+import tw from 'tailwind-extended.macro'
 
 const Button = styled('button')`
   ${tw`font-mono text-sm text-red hover:text-blue`};
@@ -166,7 +166,7 @@ const Button = styled('button')`
 ```js
 import styled from 'preact-emotion'
 import { css } from 'emotion'
-import tw from 'tailwind.macro'
+import tw from 'tailwind-extended.macro'
 
 const green = css(tw`text-green`)
 
@@ -187,7 +187,7 @@ _Note: the `css` prop requires the use of [babel-plugin-emotion](https://github.
 
 ```js
 import { css } from 'glamor'
-import tw from 'tailwind.macro'
+import tw from 'tailwind-extended.macro'
 
 const style = css(tw`font-mono text-sm text-red hover:text-blue`)
 
@@ -197,7 +197,7 @@ const App = () => <div {...style}>hello, world</div>
 **[styled-jsx](https://github.com/zeit/styled-jsx)**
 
 ```js
-import tw from 'tailwind.macro'
+import tw from 'tailwind-extended.macro'
 
 const App = () => (
   <div>

@@ -1382,7 +1382,7 @@ var macro = babelPluginMacros.createMacro(
         'body',
         t.importDeclaration(
           [t.importDefaultSpecifier(state.tailwindUtilsIdentifier)],
-          t.stringLiteral('tailwind.macro/utils.umd.js')
+          t.stringLiteral('tailwind-extended.macro/utils.umd.js')
         )
       )
     }
@@ -1390,7 +1390,7 @@ var macro = babelPluginMacros.createMacro(
     program.scope.crawl()
   },
   {
-    configName: 'tailwind'
+    configName: 'tailwind-extened'
   }
 )
 
