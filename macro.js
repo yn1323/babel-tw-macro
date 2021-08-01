@@ -428,6 +428,12 @@ var staticStyles = {
   'flex-wrap-reverse': {
     flexWrap: 'wrap-reverse'
   },
+  'flex-grow-0': {
+    flexGrow: 0
+  },
+  'flex-grow': {
+    flexGrow: 1
+  },
   // https://tailwindcss.com/docs/align-items
   'items-stretch': {
     alignItems: 'flex-stretch'
