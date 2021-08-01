@@ -822,10 +822,6 @@ var dynamicStyles = {
     prop: 'flex',
     config: 'flex'
   },
-  'flex-grow': {
-    prop: 'flexGrow',
-    config: 'flexGrow'
-  },
   'flex-shrink': {
     prop: 'flexShrink',
     config: 'flexShrink'
